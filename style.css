@@ -1,0 +1,132 @@
+body{
+	background:#333;
+}
+
+.quotation{
+	width:400px;
+	margin: 35px;
+}
+
+.quotation-circular, .quotation-square{
+	width:200px;
+	height:200px;
+	margin: 50px;
+}
+
+.bubble-container{
+	width:100%;
+	height:100%;
+	margin-bottom:20px;
+}
+
+
+.speech-bubble p{
+	margin: 0 0 10px 0;
+	text-align:center;
+}
+
+.circular-speech-bubble p{
+	margin:100px 0px;
+	text-align:center;
+}
+
+.speech-bubble, .speech-bubble-square{
+	position:relative;
+	background:#fff;
+	padding:20px;
+	color:#222;
+	border-radius:8px;
+	margin-left:20px;
+}
+
+.speech-bubble-square{
+	border-radius:0;
+}
+
+.circular-speech-bubble{
+	position:relative;
+	background:#fff;
+	padding:20px;
+	color:#222;
+	border-radius:100px;
+	margin-left:20px;
+}
+
+.bubble-left::after{
+	content: "";
+	display:block;
+	position:absolute;
+	left:-15px;
+	top:25px;
+	width:0;
+	height:0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right:15px solid #fff;
+}
+
+.square-bubble-right::after{
+	content: "";
+	display:block;
+	position:absolute;
+	right:-15px;
+	top:100px;
+	width:0;
+	height:0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left:15px solid #fff;
+}
+
+.circular-bubble-left::after{
+	content: "";
+	display:block;
+	position:absolute;
+	left:-15px;
+	top:100px;
+	width:0;
+	height:0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right:15px solid #fff;
+}
+	
+
+.bubble-bottom::after{
+	content: "";
+	display:block;
+	position:absolute;
+	bottom:-15px;
+	right:200px;
+	width:0;
+	height:0;
+	border-right:8px solid transparent;
+	border-left:8px solid transparent;
+	border-top:15px solid #fff;
+}
+
+.bubble-top::after{
+	content: "";
+	display:block;
+	position:absolute;
+	top:-15px;
+	right:200px;
+	width:0;
+	height:0;
+	border-right:8px solid transparent;
+	border-left:8px solid transparent;
+	border-bottom:15px solid #fff;
+}
+
+.bubble-right::after{
+	content: "";
+	display:block;
+	position:absolute;
+	right:-15px;
+	top:25px;
+	width:0;
+	height:0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left:15px solid #fff;
+}
